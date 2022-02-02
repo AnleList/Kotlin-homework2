@@ -1,4 +1,4 @@
-package ru.netology.homework2
+package ru.netology.moneyTransfers
 
 fun main() {
     val amount = 1_000_00 //в копейках
