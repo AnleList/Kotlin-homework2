@@ -1,13 +1,13 @@
 package ru.netology.musicLover
 
 fun main() {
-    val previousPurchaseAmount = 101_00.00
+    val amountOfPreviousPurchases = 101_00.00
     val currentPurchaseAmount = 1000_00.00
     val isUserMusicLover = false
 
-    val discountExcludingIsUserMusicLover = if (previousPurchaseAmount <= 1000_00) {
+    val discountExcludingIsUserMusicLover = if (amountOfPreviousPurchases <= 1000_00) {
         0.0
-    } else if ((previousPurchaseAmount in 1001_00.00..10000_00.00)) {
+    } else if ((amountOfPreviousPurchases in 1001_00.00..10000_00.00)) {
         100_00.00
     } else {
         currentPurchaseAmount * 0.05
