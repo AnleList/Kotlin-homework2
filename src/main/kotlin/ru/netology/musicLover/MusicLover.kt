@@ -22,16 +22,21 @@ fun main() {
         0.0
     }
 
-    val finalDiscount = (discountExcludingIsUserMusicLover + discountIncludingIsUserMusicLover) / 100
+    val finalDiscount = (discountExcludingIsUserMusicLover +
+            discountIncludingIsUserMusicLover) / 100
 
     val newPurchaseCostIncludingIsUserMusicLover = (newPurchaseCostExcludingIsUserMusicLover -
             discountIncludingIsUserMusicLover) / 100
 
-    println("Вы выбрали товаров на " + String.format("%.2f", currentPurchaseAmount / 100) + " ₽.")
+    println(
+        "Вы выбрали товаров на " +
+                String.format("%.2f", currentPurchaseAmount / 100) + " ₽."
+    )
 
     if (finalDiscount != 0.0) {
         println("Ваша скидка: " + String.format("%.2f", finalDiscount) + " ₽.")
-    } else println("К большому сожалени, у вас пока нет скидок.")
+    } else
+        println("К большому сожалени, у вас пока нет скидок.")
 
     println(
         "Итоговая стоимость вашей покупки: " +
