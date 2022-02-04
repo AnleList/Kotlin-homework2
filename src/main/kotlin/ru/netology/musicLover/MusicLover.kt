@@ -34,16 +34,16 @@ fun main() {
 
     println(
         "Вы выбрали товаров на " +
-                String.format("%.2f", currentPurchaseAmount / 100) + " ₽."
+                "%.2f".format(currentPurchaseAmount / 100) + " ₽."
     )
 
     if (finalDiscount != 0.0) {
-        println("Ваша скидка: " + String.format("%.2f", finalDiscount) + " ₽.")
+        println("Ваша скидка: " + "%.2f".format(finalDiscount) + " ₽.")
     } else
-        println("К большому сожалени, у вас пока нет скидок.")
+        println("К большому сожалению, у вас пока нет скидок.")
 
     println(
         "Итоговая стоимость вашей покупки: " +
-                String.format("%.2f", newPurchaseCostIncludingIsUserMusicLover) + " ₽."
+                "%.2f".format(newPurchaseCostIncludingIsUserMusicLover) + " ₽."
     )
 }
